@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masa Kerajaan Hindu di Indonesia</title>
+  <link rel="stylesheet" href="Stayle-bab.css">
+</head>
+<body>
+  <div class="header">
+<a href="index.html"><button class="back-btn">&larr;</button></a>
+    <h1>BAB 6</h1>
+  </div>
+  
+  <div class="content">
+    <h1>Masa Kerajaan Hindu di Indonesia</h1>
+    <p class="tengah">
+      Periode Hindu dimulai dengan berdirinya Kerajaan Kutai pada abad ke-4 M.rah sekitar abad ke-4 M dengan ditemukannya prasasti pertama di Indonesia.
+</p>
+<h1>Kerajaan Hindu Utama</h1>
+<ul>
+     <li class="kiri"><b>Kutai </b> (Kalimantan Timur):Kerajaan Hindu tertua di Indonesia, dengan raja terkenal Mulawarman.</li>
+     <li class="kiri"><b>Tarumanegara </b> (Jawa Barat):Dikenal melalui Prasasti Ciaruteun, dipimpin oleh Raja Purnawarman.</li>
+     <li class="kiri"><b>Majapahit </b>  (Jawa Timur): Kerajaan terbesar dengan puncak kejayaan di bawah Gajah Mada, terkenal dengan Sumpah Palapa.</li> 
+</ul>
+<h1>Pengaruh Hindu</h1>
+<ul>
+     <li class="kiri">Sistem kasta dalam masyarakat.</li>
+     <li class="kiri">Seni candi (contohnya Candi Penataran dan Candi Sukuh).</li>
+     <li class="kiri">Bahasa Sanskerta dan aksara Pallawa digunakan dalam dokumen resmi.</li> 
+</ul>
+
+<div class="navigation">
+  <button class="nav-btn" onclick="navigate('previous')">Sebelumnya</button>
+  <button class="nav-btn" onclick="navigate('next')">Berikutnya</button>
+</div>
+<script>
+  function navigate(direction) {
+    if (direction === 'previous') {
+      // Ganti URL ke bab sebelumnya
+      window.location.href = 'Bab5-id.html';
+    } else if (direction === 'next') {
+      // Ganti URL ke bab berikutnya
+      window.location.href = 'Bab7-id.html';
+    }
+  }
+  // Tambahkan animasi keluar sebelum navigasi
+  const links = document.querySelectorAll('.nav-btn');
+  links.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.body.classList.add('page-exit');
+      setTimeout(() => {
+        navigate(this.getAttribute('onclick').split("'")[1]);
+      }, 500); // Waktu animasi (0.5 detik)
+    });
+  });
+</script>
+</body>
+</html>

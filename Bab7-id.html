@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masa Kerajaan Buddha di Indonesia</title>
+  <link rel="stylesheet" href="Stayle-bab.css">
+</head>
+<body>
+  <div class="header">
+<a href="index.html"><button class="back-btn">&larr;</button></a>
+    <h1>BAB 7</h1>
+  </div>
+  
+  <div class="content">
+    <h1>Masa Kerajaan Buddha di Indonesia</h1>
+    <p class="tengah">
+      Pengaruh Buddha berkembang pada masa yang sama dengan Hindu, terutama melalui kerajaan Sriwijaya dan Mataram Kuno.
+</p>
+<h1>Kerajaan Buddha Utama</h1>
+<ul>
+     <li class="kiri"><b>Sriwijaya</b> (Sumatra): Kerajaan maritim yang menjadi pusat penyebaran agama Buddha di Asia Tenggara.</li>
+     <li class="kiri"><b>Mataram Kuno </b> (Jawa Tengah): Membangun Candi Borobudur, candi Buddha terbesar di dunia.</li>
+</ul>
+<h1>Pengaruh Buddha</h1>
+<ul>
+     <li class="kiri">Peninggalan seni rupa dan arsitektur, seperti Borobudur dan Candi Mendut.</li>
+     <li class="kiri">Penyebaran agama Buddha ke luar negeri melalui jalur perdagangan.</li>
+</ul>
+
+<div class="navigation">
+  <button class="nav-btn" onclick="navigate('previous')">Sebelumnya</button>
+  <button class="nav-btn" onclick="navigate('next')">Berikutnya</button>
+</div>
+<script>
+  function navigate(direction) {
+    if (direction === 'previous') {
+      // Ganti URL ke bab sebelumnya
+      window.location.href = 'Bab6-id.html';
+    } else if (direction === 'next') {
+      // Ganti URL ke bab berikutnya
+      window.location.href = 'Bab8-id.html';
+    }
+  }
+  // Tambahkan animasi keluar sebelum navigasi
+  const links = document.querySelectorAll('.nav-btn');
+  links.forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.body.classList.add('page-exit');
+      setTimeout(() => {
+        navigate(this.getAttribute('onclick').split("'")[1]);
+      }, 500); // Waktu animasi (0.5 detik)
+    });
+  });
+</script>
+</body>
+</html>

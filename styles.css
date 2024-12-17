@@ -1,0 +1,258 @@
+
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        @media only screen and (max-width: 768px) {
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar h1 {
+            margin: 0;
+        }
+        .navbar .menu-icon {
+            font-size: 24px;
+        }
+        .hero {
+            background-image: url(Gambar-Tech.jpg);
+            background-size: cover;
+            background-position: center;
+            color: black;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .hero button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .content {
+            padding: 20px;
+            margin-bottom: 100px;
+        }
+        .section-title {
+            font-size: 24px;
+            padding: 20px;
+            align-content: center;
+        }
+        .articles {
+            display: flex;
+            gap: 5vh;
+            padding: 20px;
+        }
+        .article {
+          height: 230px;
+            width: 130px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 50px ;
+        }
+        .article img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .article h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .article p {
+            font-size: 14px;
+        }
+        .categories, .games {
+            margin-top: 10px;
+        }
+        .categories ul {
+            list-style-type: none;
+            padding: 20;
+        }
+        .categories li {
+            font-size: 18px;
+            margin: 0px 0;
+        }
+        .games {
+            display:flex ;
+            gap: 3vh;
+        }
+        .game {
+            background-color: #f0f0f0;
+            padding: 5vh;
+            border-radius: 10px;
+            flex: 1;
+            text-align: center;
+        }
+        .game h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .game p {
+            font-size: 14px;
+        }
+        .about {
+            margin-top: 40px;
+        }
+        .about p {
+            font-size: 16px;
+        }
+        .box:hover {
+          transform: scale(1.2);
+          transition: 2s;
+        }
+
+        /* Gaya tombol */
+button {
+  background-color: #f202020;
+  cursor: pointer;
+  border: none;
+  color: black;
+  border-radius: 5px;
+  font-size: 14px;
+ padding: 8px 12px;
+}
+
+/* Gaya popup */.popup {
+    display: none; /* Tidak terlihat secara default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Warna latar semi-transparan */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.start {
+  background-color: blue;
+  border-radius : 3px ;
+  color: white ;
+  text-decoration:none;
+}
+
+  .scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 20px;
+  gap: 10px;
+}
+
+.scroll-item {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  background-color: gray;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  scroll-snap-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+.elemen{
+  text-align: center;
+  color: white;
+}
+
+.top-right {
+    position: absolute; 
+    top: 18px;    
+    right: 20px;
+    height: 30px;
+    color: white;
+    background-color: #333 ;
+}
+
+.flag{
+height:10px;
+}
+
+.bahasa {
+  margin-bottom:10px;
+  text-align:left;
+  padding:5px;
+}
+
+.basa {
+  padding:10px;
+  text-decoration:none;
+  color: black;
+}
+
+.basa-pas {
+  padding:10px;
+  text-decoration:none;
+  color: black;
+  background-color:#66FF66;
+  background-size: 50% 20px;
+  border-radius: 10px;
+}
+
+.bab {
+  text-decoration: none;
+  color: white;
+}
+
+        @media only screen and (min-width: 769px) {
+    body {
+        display: none; /* Tidak menampilkan konten */
+    }
+}

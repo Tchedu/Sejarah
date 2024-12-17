@@ -1,0 +1,155 @@
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        .header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h1 {
+            margin-top: 20px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .content p {
+            text-align: justify;
+            margin: 20px auto;
+            max-width: 600px;
+            line-height: 1.8;
+            font-size: 20px;
+            font-weight: bold
+        }
+        
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer button {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #00bfff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .footer button:hover {
+            background-color: #008fcc;
+        }
+
+        .footer button i {
+            font-size: 20px;
+        }
+
+        .footer button.prev i {
+            transform: rotate(180deg);
+        }
+        
+        /* Gaya tombol navigasi */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.nav-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.nav-btn:active {
+  transform: scale(0.95);
+}
+
+/* Animasi transisi halaman */
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+body.page-exit {
+  opacity: 0;
+}
+
+.back-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;b
+  position: fixed; /* Agar tetap terlihat saat di-scroll */
+  top: 10px; /* Jarak dari atas */
+  left: 100px; /* Jarak dari kiri */
+  display: flex;
+  gap: 10px; /* Jarak antar tombol */
+}
+
+/* Posisi tombol navigasi kiri atas */
+.navigation {
+  
+}
+
+/* Gaya tombol */
+.nav-btn {
+  
+}
+
+.kiri {
+  text-align: justify;
+  font-size: 20px;
+  margin-bottom: 10px; /* Jarak antar item */
+  padding: 5px; /* Ruang di dalam item */
+}
+.dalam {
+  text-decoration: none;
+}
+
+.tengah {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.custom-list li {
+  
+}
